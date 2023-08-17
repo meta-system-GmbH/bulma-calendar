@@ -706,6 +706,10 @@ export default class bulmaCalendar extends EventEmitter {
 
         document.getElementById(this.id).remove();
 
+        this._clickEvents.forEach((clickEvent) => {
+            document.body.removeEventListener(clickEvent, this.onDocumentClickDateTimePicker)
+        })
+
         this.datePicker = null;
         this.timePicker = null;
 

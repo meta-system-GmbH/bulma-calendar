@@ -429,6 +429,9 @@ declare class bulmaCalendar {
    */
   clear(): void;
 
+  /** destroy the calendar instance. */
+  destroy(): void;
+
   // Getters
   /**
    * Get component instance ID
