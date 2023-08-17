@@ -1,9 +1,23 @@
-# bulma-calendar
+# bulma-calendar - fork by meta-system
 Bulma's extension to display a calendar. It can be used on page as large calendar with apointments or in modal/popup for datepicker.
 
-[![npm](https://img.shields.io/npm/v/bulma-calendar.svg)](https://www.npmjs.com/package/bulma-calendar)
-[![npm](https://img.shields.io/npm/dm/bulma-calendar.svg)](https://www.npmjs.com/package/bulma-calendar)
-[![Build Status](https://travis-ci.org/Wikiki/bulma-calendar.svg?branch=master)](https://travis-ci.org/Wikiki/bulma-calendar)
+**This is a private fork of the original [bulma-calendar](https://github.com/Wikiki/bulma-calendar) with some fixes
+needed by company meta-system!**
+
+This fork contains several branches, which contain various fixes. Some of them are PRs at upstream.
+The `master` branch in this fork is derived from original commit
+[c7e6303](https://github.com/Wikiki/bulma-calendar/commit/c7e6303ee59b4833c8dd4ce80195aa28e414d59c)
+(aka bulma-calendar release [v6.1.19](https://github.com/Wikiki/bulma-calendar/releases/tag/v6.1.19)) 
+and does *not* contain any further changes. All changes are in separate `bugfix` branches and in the
+branch `feature/all-meta-system-changes`, which contains all collected bugfixes.
+
+# How to build this fork locally
+
+node.js 16.x / npm 8.x is required; higher versions do not work currently.
+
+Run `npm install --legacy-peer-deps` to install dependencies.
+
+Then run `npm run build` to build all artifacts.
 
 # Examples
 
