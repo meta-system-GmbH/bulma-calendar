@@ -30,10 +30,10 @@
   type: String
   description: 'Display mode: default|dialog|inline'
   value: 'default'
-- name: 'position'
-  type: String
-  description: ''
-  value: 'auto'
+- name: 'editTimeManually'
+  type: Boolean
+  description: 'Show manual inputs for time instead of pickers'
+  value: 'false'
 - name: 'showHeader'
   type: Boolean
   description: 'Show/Hide header block (with current selection)'

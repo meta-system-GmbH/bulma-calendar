@@ -273,9 +273,17 @@ declare namespace bulmaCalendar {
     toggleOnInputClick?: boolean;
 
     /**
+     * Display text inputs to edit time manually instead of selectors.
+     *
+     * @default false
+     */
+    editTimeManually?: boolean
+
+    /**
      * Callback to trigger once picker initiated
      */
     onReady?: () => void;
+
     icons?: {
       /**
        * Previous button icon

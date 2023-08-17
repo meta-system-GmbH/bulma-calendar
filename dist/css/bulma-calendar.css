@@ -110,6 +110,7 @@
   margin-right: 0.5rem;
   color: hsl(171, 100%, 41%);
   font-weight: 100;
+  white-space: nowrap;
 }
 .datetimepicker .datetimepicker-header .datetimepicker-selection-start .datetimepicker-selection-date,
 .datetimepicker .datetimepicker-header .datetimepicker-selection-end .datetimepicker-selection-date {

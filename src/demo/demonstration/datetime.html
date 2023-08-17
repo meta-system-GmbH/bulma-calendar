@@ -50,6 +50,14 @@ title: Demonstration
 <input id="datepickerDemoWeekStart" class="input" type="datetime">
 {% endcapture %}
 
+{% capture calendar_datepicker_example_manually %}
+<input class="input bulmaCalendarRangeEditTimeManually" type="datetime" data-display-mode="dialog">
+{% endcapture %}
+
+{% capture calendar_datepicker_example_inline_manually %}
+<input class="input bulmaCalendarRangeEditTimeManually" type="datetime" data-display-mode="inline">
+{% endcapture %}
+
 
 {% capture calendar_datepicker_example_inline_info %}
 <input class="input bulmaCalendarRange" type="datetime" data-display-mode="inline" data-color="info">
@@ -154,6 +162,25 @@ title: Demonstration
 <h1 class="title is-5">Change week start</h1>
 <p>Week starts on Monday</p>
 {{calendar_datepicker_example_weekstart}}
+
+{% include anchor.html name="Manual time input" %}
+<p>You can configure the component to use manual input for the time fields.</p>
+<div class="tabs">
+  <ul>
+    <li class="is-active"><a href="#editTimeManually">Dialog</a></li>
+    <li><a href="#editTimeManually-inline">Inline</a></li>
+  </ul>
+</div>
+
+<div class="tab-contents">
+  <div id="editTimeManually" class="tab-content is-active">
+    {{calendar_datepicker_example_manually}}
+  </div>
+
+  <div id="editTimeManually-inline" class="tab-content">
+    {{calendar_datepicker_example_inline_manually}}
+  </div>
+</div>
 
 {% include anchor.html name="Colors" %}
 <div class="columns is-multiline">
