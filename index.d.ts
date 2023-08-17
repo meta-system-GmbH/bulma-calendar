@@ -273,6 +273,13 @@ declare namespace bulmaCalendar {
     toggleOnInputClick?: boolean;
 
     /**
+     * Display text inputs for time to edit time manually instead of selectors.
+     *
+     * @default false
+     */
+    editTimeManually?: boolean
+
+    /**
      * Callback to trigger once picker initiated
      */
     onReady?: () => void;
@@ -299,7 +306,7 @@ declare namespace bulmaCalendar {
     };
   }
 
-  type EventType = 'show' | 'hide' | 'select' | 'select:start';
+  type EventType = 'show' | 'hide' | 'select' | 'select:start' | 'save';
 
   interface Event<T extends EventType = EventType> {
     type: T;
@@ -429,6 +436,9 @@ declare class bulmaCalendar {
    */
   clear(): void;
 
+  /** destroy the calendar instance. */
+  destroy(): void;
+
   // Getters
   /**
    * Get component instance ID
@@ -494,6 +504,11 @@ declare class bulmaCalendar {
    * Set max possible date
    */
   set maxDate(maxDate: Date);
+
+  /**
+   * Get the current format (for date & time pickers, this includes both the date and the time format).
+   */
+  get format(): string;
 
   /**
    * Get date format pattern
