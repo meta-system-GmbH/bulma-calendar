@@ -24,6 +24,14 @@ Run `npm install --legacy-peer-deps` to install dependencies.
 
 Then run `npm run build` to build all artifacts.
 
+To run the demo, `ruby` and the ruby bundler `bundle` is required. Both must
+be installed locally and be available in your system path. Then run:
+```sh
+bundle config set --local path '.ruby/vendor/bundle'  # must be done only once
+bundle install                                        # only after update of deps
+npx gulp demo
+```
+
 # Examples
 
 ### Date format
