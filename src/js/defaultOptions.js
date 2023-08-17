@@ -8,7 +8,6 @@ const defaultOptions = {
     timeFormat:          'HH:mm',
     displayMode:         'default',
     editTimeManually:    false,
-    position:            'auto',
     showHeader:          true,
     headerPosition:      'top',
     showFooter:          true,

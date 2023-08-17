@@ -62,6 +62,15 @@ title: Demonstration
 <input class="input bulmaCalendarRange" type="time" data-display-mode="inline" data-color="black">
 {% endcapture %}
 
+{% capture calendar_datepicker_example_manually %}
+<input class="input bulmaCalendarEditTimeManually" type="time">
+{% endcapture %}
+
+{% capture calendar_datepicker_example_inline_manually %}
+<input class="input bulmaCalendarEditTimeManually" type="time" data-display-mode="inline">
+{% endcapture %}
+
+
 {% include anchor.html name="Display styles" %}
 <p>Calendar component comes with multiple display styles. The default style will show the datePicker as a popover
   under the input element on desktop and as a dialog modaal on mobile.</p>
@@ -119,6 +128,25 @@ title: Demonstration
   <div id="range-labels-inline" class="tab-content">
     <p>You can easily customize from and to selection labels.</p>
     {{calendar_datepicker_example_labels}}
+  </div>
+</div>
+
+{% include anchor.html name="Manual input" %}
+<p>You can configure the component to use manual input.</p>
+<div class="tabs">
+  <ul>
+    <li class="is-active"><a href="#editTimeManually">Default</a></li>
+    <li><a href="#editTimeManually-inline">Inline</a></li>
+  </ul>
+</div>
+
+<div class="tab-contents">
+  <div id="editTimeManually" class="tab-content is-active">
+    {{calendar_datepicker_example_manually}}
+  </div>
+
+  <div id="editTimeManually-inline" class="tab-content">
+    {{calendar_datepicker_example_inline_manually}}
   </div>
 </div>
 

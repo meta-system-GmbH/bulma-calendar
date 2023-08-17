@@ -1,9 +1,9 @@
 export default (data) => {
-	return `<div class="datetimepicker-header${data.type === 'time' ? ' is-hidden' : ''}${data.type === 'date' ? ' is-date-only' : ''}">
+	return `<div class="datetimepicker-header${(data.type === 'time' || data.type === 'datetime') && !data.editTimeManually ? ' is-hidden' : ''}${data.type === 'date' ? ' is-date-only' : ''}">
 		<div class="datetimepicker-selection-details">
 			<div class="datetimepicker-selection-from${data.labelFrom === '' ? ' is-hidden' : ''}">${data.labelFrom}</div>
 			<div class="datetimepicker-selection-start${data.isRange ? '' : ' is-centered'}">
-				<div class="datetimepicker-selection-wrapper">
+				<div class="datetimepicker-selection-wrapper${data.type === 'time' ? ' is-hidden' : ''}">
 					<div class="datetimepicker-selection-day"></div>
 					<div class="datetimepicker-selection-date">
 						<div class="datetimepicker-selection-month"></div>

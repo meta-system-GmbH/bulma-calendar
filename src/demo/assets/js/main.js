@@ -27,6 +27,15 @@ ready(function () {
         labelTo:   'Check-out'
     });
 
+    bulmaCalendar.attach('.bulmaCalendarEditTimeManually', {
+        editTimeManually: true,
+    });
+
+    bulmaCalendar.attach('.bulmaCalendarRangeEditTimeManually', {
+        isRange:          true,
+        editTimeManually: true,
+    });
+
     bulmaCalendar.attach('#datepickerDemoDisabledDates', {
         displayMode:   'dialog',
         disabledDates: [start, end]
