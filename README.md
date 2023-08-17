@@ -18,7 +18,8 @@ branch `feature/all-meta-system-changes`, which contains all collected bugfixes.
 
 # How to build this fork locally
 
-node.js 16.x / npm 8.x is required; higher versions do not work currently.
+**Node.js 16.x / NPM 8.x is required to build!** Higher versions have problems with the build chain currently.
+Build dependencies must be updated; this is a future task.
 
 Run `npm install --legacy-peer-deps` to install dependencies.
 
