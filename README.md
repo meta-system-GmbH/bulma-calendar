@@ -14,6 +14,8 @@ branch `feature/all-meta-system-changes`, which contains all collected bugfixes.
 ### Bugfix branches made by meta-system
 
 * `bugfix/typescript-issues` fixes some typescript definitions
+* `bugfix/issue-196-set-min-max-date-and-refresh` fixes a quirk reported in
+  [#196](https://github.com/Wikiki/bulma-calendar/issues/196#issuecomment-823881530)
 
 
 # How to build this fork locally
