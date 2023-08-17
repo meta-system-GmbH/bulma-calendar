@@ -709,7 +709,8 @@ export default class bulmaCalendar extends EventEmitter {
      */
     destroy() {
 
-        document.getElementById(this.id).remove();
+        let element = document.getElementById(this.id)
+        if (element) element.remove();
 
         this._clickEvents.forEach((clickEvent) => {
             document.body.removeEventListener(clickEvent, this.onDocumentClickDateTimePicker)
