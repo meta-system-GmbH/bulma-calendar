@@ -11,6 +11,11 @@ The `master` branch in this fork is derived from original commit
 and does *not* contain any further changes. All changes are in separate `bugfix` branches and in the
 branch `feature/all-meta-system-changes`, which contains all collected bugfixes.
 
+### Bugfix branches made by meta-system
+
+* `bugfix/typescript-issues` fixes some typescript definitions
+
+
 # How to build this fork locally
 
 node.js 16.x / npm 8.x is required; higher versions do not work currently.
