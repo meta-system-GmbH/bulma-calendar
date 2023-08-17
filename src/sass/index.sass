@@ -20,6 +20,9 @@ $calendar-selection-padding: .3rem 0 !default
 $calendar-selection-nav-padding: .5em !default
 $calendar-date-padding: .1rem 0 !default
 
+// for whatever reasons, with the current (old) versions of sass, gulp-sass and gulp, the timestamp of this
+// file index.sass must be *newer* then the timestamp for file timepicker.sass, otherwise you'll get a sass
+// compilation error saying that "timepicker.sass" cannot be found.
 @import timepicker.sass
 
 =datetimepicker-header
