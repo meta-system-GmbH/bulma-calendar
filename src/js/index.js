@@ -191,6 +191,7 @@ export default class bulmaCalendar extends EventEmitter {
      * minDate getter and setters
      */
     set minDate(date) {
+        this.datePicker.min = date;
         this.datePicker.minDate = date;
         return this;
     }
@@ -202,6 +203,7 @@ export default class bulmaCalendar extends EventEmitter {
 
     // Set maxDate
     set maxDate(date) {
+        this.datePicker.max = date;
         this.datePicker.maxDate = date;
         return this;
     }
@@ -607,6 +609,9 @@ export default class bulmaCalendar extends EventEmitter {
             }
 
         }
+
+        this.datePicker.refresh();
+        this.timePicker.refresh();
 
         this.emit('refresh', this);
 
