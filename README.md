@@ -16,6 +16,7 @@ branch `feature/all-meta-system-changes`, which contains all collected bugfixes.
 * `bugfix/typescript-issues` fixes some typescript definitions
 * `bugfix/issue-196-set-min-max-date-and-refresh` fixes a quirk reported in
   [#196](https://github.com/Wikiki/bulma-calendar/issues/196#issuecomment-823881530)
+* `bugfix/issue-315-remove-event-handlers-on-destroy` fixes [#315](https://github.com/Wikiki/bulma-calendar/issues/315)
 
 
 # How to build this fork locally
