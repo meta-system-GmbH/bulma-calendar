@@ -62,7 +62,14 @@ const config = {
     },
     source: paths.src + 'js/',
     destination: paths.dist + 'js/'
-  }
+  },
+  /**
+   * By default, bulma-calendar includes *all* date-fns locales, increasing the full size of the minified
+   * js bundle to ~750kB! If you need only support for some locales, you can shrink the size drastically
+   * by restricting the supported locales here. If you don't want to restrict the locales, set this
+   * property to false, null or [].
+   */
+  supportedLocales: ['en-US', 'de', 'it', 'es', 'fr']
 };
 
 /**
@@ -141,8 +148,14 @@ gulp.task('build:scripts', function () {
             options: {
               babelrc: './babelrc'
             }
-          }, ],
+          }],
         },
+        plugins: config.supportedLocales ? [
+          new webpack.ContextReplacementPlugin(
+            /^date-fns[/\\]locale$/,
+            new RegExp(`\\.[/\\\\](${config.supportedLocales.join('|')})[/\\\\]index\\.js$`)
+          )
+        ] : [],
         performance: {
           hints: false,
         },

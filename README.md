@@ -21,6 +21,12 @@ branch `feature/all-meta-system-changes`, which contains all collected bugfixes.
   public and fixes some layout issues [#278](https://github.com/Wikiki/bulma-calendar/issues/278)
 * `bugfix/issue-330-showClearButton-remove-x-icon` fixes [#330](https://github.com/Wikiki/bulma-calendar/issues/330)
 
+### Additional changes in branch feature/all-meta-system-changes
+
+* change webpack bundling in `gulpfile.js` so that bulma-calendar.js is only built with locales 
+  'en-US', 'de', 'it', 'es' and 'fr', in order to shrink the asset size (from 750kB to 151kB)
+* added build instructions in `README.md`
+
 
 # How to build this fork locally
 
